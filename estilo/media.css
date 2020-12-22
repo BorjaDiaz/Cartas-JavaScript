@@ -1,0 +1,11 @@
+
+#grid-container{
+	position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 1%;
+	grid-row-gap: 1%;
+	margin-left: 1%;
+}
+
+

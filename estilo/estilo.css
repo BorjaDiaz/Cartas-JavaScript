@@ -1,0 +1,239 @@
+
+@media screen and (max-width:640px){
+	#cabezera{
+		text-align: center;
+		background-color: #EEB165;
+		padding: 10px;
+	}
+	#botones{
+		text-align: center;
+	}
+	#dificultad{
+		width: 100px;
+		height: 50px;
+	}
+
+	#puntuacion{
+		text-align: center;
+	}
+
+	#puntos{
+		text-align: center;
+		border: 2px solid;
+		padding-left: 100px;
+		padding-right: 100px;
+		background-color: #FECA8B;
+	}
+
+	#juego{
+		margin-left: 10px;
+	}
+
+	button{
+		background-color: #FECA8B;
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width:640px){
+	#cabezera{
+		text-align: center;
+		background-color: #65D9EE;
+		padding: 10px;
+	}
+	#botones{
+		text-align: center;
+	}
+	#dificultad{
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 100px;
+		height: 50px;
+	}
+
+	#puntuacion{
+		text-align: center;
+	}
+
+	#puntos{
+		text-align: center;
+		border: 2px solid;
+		padding-left: 100px;
+		padding-right: 100px;
+		background-color: #6699ff;
+	}
+
+	#juego{
+		margin-left: 10px;
+	}
+
+	button{
+		background-color: #ccddff;
+	}
+
+
+}
+
+@media screen and (min-width:1024px) and (min-width:1280px){
+    #cabezera{
+		text-align: center;
+		background-color: #ccddff;
+		padding: 10px;
+	}
+	#botones{
+		text-align: center;
+	}
+	#dificultad{
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 100px;
+		height: 50px;
+	}
+
+	#puntuacion{
+		text-align: center;
+	}
+
+	#puntos{
+		text-align: center;
+		border: 2px solid;
+		padding-left: 100px;
+		padding-right: 100px;
+		background-color: #6699ff;
+	}
+
+	#juego{
+		margin-left: 10px;
+	}
+
+	button{
+		background-color: #ccddff;
+	}
+
+}
+
+@media screen and (min-width:1400px){
+    #cabezera{
+		text-align: center;
+		background-color: #9BD55F;
+		padding: 10px;
+	}
+	#botones{
+		text-align: center;
+	}
+	#dificultad{
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 100px;
+		height: 50px;
+	}
+
+	#puntuacion{
+		text-align: center;
+	}
+
+	#puntos{
+		text-align: center;
+		border: 2px solid;
+		padding-left: 100px;
+		padding-right: 100px;
+		background-color: #BBF47F;
+	}
+
+	#juego{
+		margin-left: 10px;
+	}
+
+	button{
+		background-color:#BBF47F;
+	}
+
+}
+
+.grid-item{
+	border: 1px solid;
+	width: 150px;
+	height: 150px;
+	background-position: center; 
+	background-repeat: no-repeat;
+	transform-style: preserve-3d;
+	transition: all 1.5s ease;
+	z-index:1;
+}
+
+.grid-item:hover{
+	border:  1px solid red;
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+	z-index:99;
+}
+.carta{
+	position: absolute;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	background-color: white;
+}
+
+.reverso{
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+
+/* Modal */
+.model{
+	padding
+}
+.modalDialog{
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { 
+	background: #00d9ff; 
+}

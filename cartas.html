@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Scripts -->
+    <script src="scripts/cronometro.js"></script>
+	<script src="scripts/dificultades.js"></script>
+	<script src="scripts/fechahoy.js"></script>
+	<script src="scripts/storage.js"></script>
+	<script src="scripts/scripts.js"></script>
+	<script src="scripts/modal.js"></script>
+	<!-- Favicon -->
+	<link rel="icon" type="image/gif" href="imagen/pikachu.jpg">
+	
+    <title>Cartas</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div id="cabezera">
+	<div id="botones">
+		<button id="dificultad" type="submit" value="facil" onclick="borrarTodo(),facil()">Facil</button>
+		<button id="dificultad" type="submit" value="media" onclick="borrarTodo(),media()">Media</button>
+		<button id="dificultad" type="submit" value="dificil" onclick="borrarTodo(),dificil()">Dificil</button>
+	</div>
+	<br/>
+	<!-- Modal -->
+	<a href="#openModal" onclick="getStorage()">Ver Puntuaciones</a>
+	<div id="openModal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Puntuaciones</h2>
+			<div id="datosJugador"></div>
+		</div>
+	</div>
+	<div id="puntuacion">
+		<br/>
+		<br/>
+		<a id="puntos">0</a>
+		<br/>
+		<br/>
+		<div id="contenedor">
+			<a class="reloj" id="Horas">00</a>
+			<a class="reloj" id="Minutos">:00</a>
+			<a class="reloj" id="Segundos">:00</a>
+			<a class="reloj" id="Centesimas">:00</a>
+			<input type="button" class="boton" id="inicio" value="Empezar" onclick="inicio();">
+		</div>
+	</div>
+</div>
+<br/>
+<br />
+<div id="juego">
+    <div id="grid-container"></div>
+<div>
+</body>
+</html>
